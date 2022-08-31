@@ -1,0 +1,21 @@
+﻿@model IList<CODEWITHMVC.Models.EMPMASTER>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<ol>
+    @foreach (EMPMASTER emp in Model)
+    {
+        
+        <li>@Html.DisplayFor(item => emp.Id)</li>
+        <li>@Html.DisplayFor(item => emp.Emp_Code)</li>
+
+        <li>@Html.DisplayFor(item => emp.Emp_Name)</li>
+
+
+        <li>@Html.DisplayFor(item => emp.Designation)</li>
+
+
+       
+
+    }
+</ol>
